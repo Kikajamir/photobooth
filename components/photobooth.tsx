@@ -340,6 +340,11 @@ export default function PhotoboothUI() {
                               ref={webcamRef}
                               screenshotFormat="image/png"
                               className="w-full h-full object-cover"
+                              videoConstraints={{
+                                facingMode: "user",
+                                width: 1280,
+                                height: 960,
+                              }}
                               mirrored={false}
                               onUserMediaError={() =>
                                 setCameraError("Unable to access camera. Please check permissions.")
