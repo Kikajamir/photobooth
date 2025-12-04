@@ -340,6 +340,7 @@ export default function PhotoboothUI() {
                               ref={webcamRef}
                               screenshotFormat="image/png"
                               className="w-full h-full object-cover"
+                              style={{ transform: "scaleX(-1)" }}
                               videoConstraints={{
                                 facingMode: "user",
                                 width: 1280,
